@@ -32,11 +32,20 @@ def criarreuniao():
     local = str(input("Defina o local da sua reuniao: "))
     hinicial = str(input("Defina o horario de inicio da sua reuniao: "))
     hfinal = str(input("Defina o horario em que sua reuniao encerra: "))
-    ata = str(input("Defina o horario em que sua reuniao encerra: "))
+    link = str(input("Defina um link para anexo: "))
+    ata = str(input("Escreva a ata da reuniao: "))
+
+    quantosparticiapantes = int(input("Quantos participantes, alem de você, estaram na reuniao? "))
+
+    for i in range(0,quantosparticiapantes):
+
+        participantesin = str(input(""))
 
 
 
 
 
 
-    criarreuniao()
+
+
+criarreuniao()
