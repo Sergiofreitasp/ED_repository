@@ -1,13 +1,18 @@
-class ousuariomenu(object):
-    def __init__(self):
+import reuniao
+def ousuariomenu():
 
      opcao = str(input("Escolha uma opção - 1(criar reuniao) 2(confirmar ou negar presença) 3(vizualizar ata de reuniao)"
                       "/n 4(editar ata de reuniao) 5(baixar ata de reuniao) 6 (Adicionar participantes) 7( Redigir atas de reuniões do qual é o proprietário)"
                       "/n 8( Editar atas de reuniões do qual é o proprietário) "
                       "/n 9 (Sugerir local da reunião)"))
      if opcao == "1":
-        print("CRIAR REUNIAO")
-        criarreuniao()
+        reuniao.tiporeuniao()
+        tipo = reuniao.tiporeuniao()
+        if tipo == "1":
+            if tipo == "1":
+                reuniao.reunioespublicas.append(reuniao.criarreuniao())
+            elif tipo == "2":
+                reuniao.reunioesprivadas.append(reuniao.criarreuniao())
      elif opcao == "2":
         print("CONFIRMAR PRESENÇA")
      elif opcao == "3":
@@ -26,7 +31,7 @@ class ousuariomenu(object):
         print("SUGERIR LOCAL DE REUNIÃO")
 
 
-    def criarreuniao():
+def criarreuniao():
         visibilidade = str(input("Sua reuniao é 1(publica) ou 2(privada)? "))
 
         assunto = str(input("Defina o assunto da sua reuniao: "))
@@ -35,4 +40,3 @@ class ousuariomenu(object):
         hinicial = str(input("Defina o horario de inicio da sua reuniao: "))
         hfinal = str(input("Defina o horario em que sua reuniao encerra: "))
         ata = str(input("Defina o horario em que sua reuniao encerra: "))
-    criarreuniao()
