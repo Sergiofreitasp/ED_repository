@@ -1,3 +1,13 @@
+from datetime import datetime
+import datetime
+import coordenadormenu
+import usuarioativo
+import gestormenu
+import calendar
+import pygame
+from datetime import date
+import outromenu
+from time import localtime
 reunioespublicas = {}
 reunioesprivadas = {}
 atareunioespublicas = {}
@@ -7,17 +17,9 @@ naoconfirmouPr = {}
 naoconfirmouPu = {}
 listdedicionarios = [reunioespublicas, reunioesprivadas, atareunioespublicas, atareunioesprivadas, proprietarioreuniao]
 listadesalas = ["Sala01", "Sala02", "Sala03"]
-from datetime import date
-import outromenu
-from time import localtime
+
 data_atual = date.today()
-from datetime import datetime
-import datetime
-import coordenadormenu
-import usuarioativo
-import gestormenu
-import calendar
-import pygame
+
 usuario = usuarioativo.pegarusuario()
 
 

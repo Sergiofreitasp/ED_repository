@@ -1,6 +1,6 @@
 import reuniaolist
 import main
-import usuarioativo
+
 def ousuariomenu():
     print(reuniaolist.reunioespublicas)
 
@@ -19,7 +19,7 @@ def ousuariomenu():
          if tipo == "1":
              reuniaolist.criarreuniaoPrO()
          elif tipo == "2":
-             reuniaolist.criarreuniaoPrO()
+              reuniaolist.criarreuniaoPrO()
     elif opcao == "2":
         print("CONFIRMAR PRESENÇA")
         reuniaolist.confirmarpresença()

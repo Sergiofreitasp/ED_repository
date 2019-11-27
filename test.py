@@ -36,14 +36,8 @@ for linha in arq:
 arq.close()'''
 
 
-participantes = []
-listadeespera = []
-for i in range(participantesquanti):
-    listadeespera.append(input("digite o username do usuario participante: "))
 
 
-
-naoconfirmouPr[nome] = listadeespera
 
 
 
